@@ -1,0 +1,15 @@
+babel.config.js
+metro.config.js
+polyfill.js
+serviceWorker.js
+setupTests.js
+
+.eslintrc.js
+
+build/*
+coverage/*
+node_modules/*
+sample-coreui*/*
+
+index.js
+App.tsx

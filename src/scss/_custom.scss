@@ -1,0 +1,87 @@
+// Here you can add other styles
+@import 'customs/react-time-picker';
+@import 'customs/react-form-stepper';
+@import 'customs/react-calendar';
+@import 'customs/react-datepicker';
+
+.logo-link {
+  text-decoration: none !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+input[type='checkbox'] {
+  cursor: pointer;
+  &.checkbox-lg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+::placeholder {
+  opacity: 0.7 !important; /* Firefox */
+  font-style: italic;
+}
+
+label[required] {
+  &::after {
+    content: '*';
+    color: var(--danger);
+  }
+}
+
+.highlight {
+  color: red;
+}
+
+.operation {
+  color: black;
+}
+.react-calendar_custom {
+  .react-calendar__month-view__days__day--weekend {
+    color: #000015;
+  }
+}
+
+.disabled-date {
+  pointer-events: painted;
+}
+
+.react-datepicker__day.highlight {
+  color: red;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hover-bg {
+  &-primary:hover {
+    background-color: var(--primary);
+  }
+  &-secondary:hover {
+    background-color: var(--secondary);
+  }
+  &-danger:hover {
+    background-color: var(--danger);
+  }
+  &-success:hover {
+    background-color: var(--success);
+  }
+  &-warning:hover {
+    background-color: var(--warning);
+  }
+  &-info:hover {
+    background-color: var(--info);
+  }
+  &-light:hover {
+    background-color: var(--light);
+  }
+  &-dark:hover {
+    background-color: var(--dark);
+  }
+}

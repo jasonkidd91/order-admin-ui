@@ -1,0 +1,23 @@
+// override react-time-picker style
+.react-time-picker {
+  display: flex !important;
+  .react-time-picker__wrapper {
+    font-size: $input-font-size;
+    border: $input-border-width solid;
+    border-radius: $input-border-radius;
+    padding: $input-padding-y $input-padding-x;
+    @include themes($form-theme-map, $create: parent) {
+      color: themes-get-value('input-color');
+      background-color: themes-get-value('input-bg');
+      border-color: themes-get-value('input-border-color');
+    }
+  }
+  .react-time-picker__inputGroup__input {
+    @include themes($form-theme-map, $create: parent) {
+      color: themes-get-value('input-color');
+    }
+  }
+  .react-time-picker__inputGroup__amPm {
+    float: right;
+  }
+}

@@ -1,0 +1,38 @@
+// override react-form-stepper style
+.RFS-StepperContainer {
+  padding: 20px 0px !important;
+
+  // completed or active button hover style
+  .RFS-StepButton.completed:hover,
+  .RFS-StepButton.active:hover {
+    background-color: var(--warning);
+  }
+
+  // completed button style
+  .RFS-StepButton.completed,
+  .RFS-Connector.completed {
+    background-color: var(--success);
+    border-color: var(--success);
+  }
+
+  // active button style
+  .RFS-StepButton.active,
+  .RFS-Connector.active {
+    background-color: var(--info);
+    border-color: var(--info);
+  }
+
+  // disabled button style
+  .RFS-StepButton[disabled] {
+    background-color: var(--dark);
+    border-color: var(--dark);
+  }
+
+  .RFS-StepContainer {
+    padding: 0px;
+  }
+
+  .RFS-Label {
+    font-size: 0.8rem;
+  }
+}
